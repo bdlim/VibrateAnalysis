@@ -26,6 +26,8 @@
 		41068F271A0DE105003CB1AF /* ScatterPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41068F261A0DE105003CB1AF /* ScatterPlotViewController.m */; };
 		41068F331A0F490A003CB1AF /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41068F321A0F490A003CB1AF /* NSMutableArray+QueueAdditions.m */; };
 		41068F361A0F4C96003CB1AF /* DataReadPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 41068F351A0F4C96003CB1AF /* DataReadPoint.m */; };
+		89512C611A1ADC090017A3E6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89512C601A1ADC090017A3E6 /* CoreData.framework */; };
+		89512C641A1ADC990017A3E6 /* ReminderModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89512C621A1ADC990017A3E6 /* ReminderModel.xcdatamodeld */; };
 		896120EC1A1549CD0043DCAC /* AddMedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 896120EB1A1549CD0043DCAC /* AddMedicationViewController.m */; };
 		89CE70271A12FDD300D92B21 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CE70261A12FDD300D92B21 /* libCorePlot-CocoaTouch.a */; };
 		89CE70321A13443400D92B21 /* MedicationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CE70311A13443400D92B21 /* MedicationTableViewController.m */; };
@@ -72,6 +74,8 @@
 		41068F321A0F490A003CB1AF /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
 		41068F341A0F4C96003CB1AF /* DataReadPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataReadPoint.h; sourceTree = "<group>"; };
 		41068F351A0F4C96003CB1AF /* DataReadPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataReadPoint.m; sourceTree = "<group>"; };
+		89512C601A1ADC090017A3E6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		89512C631A1ADC990017A3E6 /* ReminderModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReminderModel.xcdatamodel; sourceTree = "<group>"; };
 		896120EA1A1549CD0043DCAC /* AddMedicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMedicationViewController.h; sourceTree = "<group>"; };
 		896120EB1A1549CD0043DCAC /* AddMedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMedicationViewController.m; sourceTree = "<group>"; };
 		89CE6FD81A12FDD300D92B21 /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89512C611A1ADC090017A3E6 /* CoreData.framework in Frameworks */,
 				41068F241A0DDC5D003CB1AF /* QuartzCore.framework in Frameworks */,
 				410681171A09F13C003CB1AF /* CoreMotion.framework in Frameworks */,
 				410680E11A09F0DA003CB1AF /* CoreGraphics.framework in Frameworks */,
@@ -215,6 +220,7 @@
 		410680DD1A09F0DA003CB1AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89512C601A1ADC090017A3E6 /* CoreData.framework */,
 				41068F231A0DDC5D003CB1AF /* QuartzCore.framework */,
 				410681161A09F13C003CB1AF /* CoreMotion.framework */,
 				410680DE1A09F0DA003CB1AF /* Foundation.framework */,
@@ -228,6 +234,7 @@
 		410680E41A09F0DA003CB1AF /* VibrateAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				89512C621A1ADC990017A3E6 /* ReminderModel.xcdatamodeld */,
 				410680ED1A09F0DA003CB1AF /* CCAppDelegate.h */,
 				410680EE1A09F0DA003CB1AF /* CCAppDelegate.m */,
 				410680F01A09F0DA003CB1AF /* Main_iPhone.storyboard */,
@@ -477,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				896120EC1A1549CD0043DCAC /* AddMedicationViewController.m in Sources */,
+				89512C641A1ADC990017A3E6 /* ReminderModel.xcdatamodeld in Sources */,
 				410680EF1A09F0DA003CB1AF /* CCAppDelegate.m in Sources */,
 				89F242301A18407600E93527 /* AddAlertViewController.m in Sources */,
 				41068F331A0F490A003CB1AF /* NSMutableArray+QueueAdditions.m in Sources */,
@@ -733,6 +741,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		89512C621A1ADC990017A3E6 /* ReminderModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				89512C631A1ADC990017A3E6 /* ReminderModel.xcdatamodel */,
+			);
+			currentVersion = 89512C631A1ADC990017A3E6 /* ReminderModel.xcdatamodel */;
+			name = ReminderModel.xcdatamodeld;
+			path = ../ReminderModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 410680D31A09F0DA003CB1AF /* Project object */;
 }
