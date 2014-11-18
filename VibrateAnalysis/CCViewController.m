@@ -48,13 +48,6 @@
 
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    
-    [[UIDevice currentDevice] setValue:
-     [NSNumber numberWithInteger: UIInterfaceOrientationLandscapeLeft]
-                                forKey:@"orientation"];
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -136,7 +129,7 @@
     self.maxRotZ.text = [NSString stringWithFormat:@" %.2f",currentMaxRotZ];
     
 }
-/*
+
 #pragma mark - PlotDataSourceDelegate methods
 - (NSUInteger) numberOfRecordsForPlot:(CPTPlot *)plot {
     return [self.dataQueue count];
@@ -155,7 +148,6 @@
         return [NSNumber numberWithDouble:[[self.dataQueue objectAtIndex:index] AccelX]];
     }
 }
- */
 - (IBAction)toGraph:(id)sender {
     
     [self performSegueWithIdentifier:@"toGraph" sender:nil];
@@ -172,7 +164,7 @@
     {
         ScatterPlotViewController *SPVC = [segue destinationViewController];
         
-        //[SPVC setDataQueue:_dataQueue];
+        [SPVC setDataQueue:_dataQueue];
     }
 }
 
